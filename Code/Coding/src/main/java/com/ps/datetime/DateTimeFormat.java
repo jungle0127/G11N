@@ -2,6 +2,7 @@ package com.ps.datetime;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
+import java.time.Instant;
 import java.util.Calendar;
 import java.util.Date;
 import java.util.GregorianCalendar;
@@ -49,5 +50,8 @@ public class DateTimeFormat {
     {
     	DateTimeFormat dt = new DateTimeFormat();
     	dt.printDateFormats();
+    	Instant instant = Instant.parse( "2010-10-02T12:23:23Z" ); 
+    	Date date = java.util.Date.from( instant );
+    	System.out.println(date);
     }
 }
