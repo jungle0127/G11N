@@ -1,5 +1,7 @@
 package com.ps;
 
+import com.ps.unicode.Transformer;
+
 /**
  * Hello world!
  *
@@ -8,6 +10,7 @@ public class App
 {
     public static void main( String[] args )
     {
-        System.out.println( "Hello World!" );
+        Transformer tf = new Transformer();
+        tf.printChinese();
     }
 }

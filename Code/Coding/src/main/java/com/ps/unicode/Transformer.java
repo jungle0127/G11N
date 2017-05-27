@@ -1,6 +1,9 @@
 package com.ps.unicode;
 
 public class Transformer {
+	public Transformer(){
+		
+	}
 	public void printChinese(){
 		for(int beginIndex = 0x4e00;beginIndex <= 0x9Fff; beginIndex++){
 			System.out.println(Character.toChars(beginIndex));
