@@ -1,11 +1,13 @@
 package com.ps.datetime;
 
+import java.text.DateFormat;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.time.Instant;
 import java.util.Calendar;
 import java.util.Date;
 import java.util.GregorianCalendar;
+import java.util.Locale;
 import java.util.TimeZone;
 
 public class DateTimeFormat {
@@ -46,6 +48,17 @@ public class DateTimeFormat {
         System.out.println("sdf.parse(\"0001-01-01T00:00:00.000Z\") = " + sdf.parse("0001-01-01T00:00:00.000Z"));
         System.out.println("sdf.parse(\"292278994-08-17T07:12:55.807Z\") = " + sdf.parse("292278994-08-17T07:12:55.807Z"));
 	}
+	public void printLocaleFormat(){
+		DateFormat fullFormat = DateFormat.getDateInstance(DateFormat.FULL,Locale.CHINESE);
+		DateFormat longFormat = DateFormat.getDateInstance(DateFormat.LONG,Locale.JAPANESE);
+		DateFormat mediumFormat = DateFormat.getDateInstance(DateFormat.MEDIUM);
+		DateFormat shortFormat = DateFormat.getDateInstance(DateFormat.SHORT);
+		
+		System.out.println(fullFormat.format(new Date()));
+		System.out.println(longFormat.format(new Date()));
+		System.out.println(mediumFormat.format(new Date()));
+		System.out.println(shortFormat.format(new Date()));
+	}
     public static void main(String[] args) throws Exception
     {
     	DateTimeFormat dt = new DateTimeFormat();
@@ -53,5 +66,6 @@ public class DateTimeFormat {
     	Instant instant = Instant.parse( "2010-10-02T12:23:23Z" ); 
     	Date date = java.util.Date.from( instant );
     	System.out.println(date);
+    	dt.printLocaleFormat();
     }
 }
