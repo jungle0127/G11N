@@ -21,5 +21,8 @@ The third plane(#2) named Supplementary Ideographic Plane(SIP), it contains ideo
 The plane#14 Supplementary Special-Purpose Plane
 The Plane#15 Supplementary Private Use Area A
 The Plane#16 Supplementary Private Use Area B
+
+TimeZone information on OpenJDK:
+http://grepcode.com/file_/repository.grepcode.com/java/root/jdk/openjdk/8u40-b25/sun/util/calendar/ZoneInfoFile.java/?v=source
  
  
