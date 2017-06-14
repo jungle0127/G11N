@@ -25,4 +25,56 @@ The Plane#16 Supplementary Private Use Area B
 TimeZone information on OpenJDK:
 http://grepcode.com/file_/repository.grepcode.com/java/root/jdk/openjdk/8u40-b25/sun/util/calendar/ZoneInfoFile.java/?v=source
  
- 
+    private static String[][] oldMappings = new String[][] {
+        { "ACT", "Australia/Darwin" },
+        { "AET", "Australia/Sydney" },
+        { "AGT", "America/Argentina/Buenos_Aires" },
+        { "ART", "Africa/Cairo" },
+        { "AST", "America/Anchorage" },
+        { "BET", "America/Sao_Paulo" },
+        { "BST", "Asia/Dhaka" },
+        { "CAT", "Africa/Harare" },
+        { "CNT", "America/St_Johns" },
+        { "CST", "America/Chicago" },
+        { "CTT", "Asia/Shanghai" },
+        { "EAT", "Africa/Addis_Ababa" },
+        { "ECT", "Europe/Paris" },
+        { "IET", "America/Indiana/Indianapolis" },
+        { "IST", "Asia/Kolkata" },
+        { "JST", "Asia/Tokyo" },
+        { "MIT", "Pacific/Apia" },
+        { "NET", "Asia/Yerevan" },
+        { "NST", "Pacific/Auckland" },
+        { "PLT", "Asia/Karachi" },
+        { "PNT", "America/Phoenix" },
+        { "PRT", "America/Puerto_Rico" },
+        { "PST", "America/Los_Angeles" },
+        { "SST", "Pacific/Guadalcanal" },
+        { "VST", "Asia/Ho_Chi_Minh" },
+    };
+
+default date format:
+
+https://docs.oracle.com/cd/E57471_01/bigData.100/data_processing_bdd/src/rdp_config_dates.html
+
+d/M/yy
+d-M-yy
+d.M.yy
+M/d/yy
+M-d-yy
+M.d.yy
+yy/M/d
+yy-M-d
+yy.M.d
+MMM d, yyyy
+EEE, MMM d, yyyy
+yyyy-MM-dd HH:mm:ss
+yyyy-MM-dd h:mm:ss a
+yyyy-MM-dd'T'HH-mm-ssZ
+yyyy-MM-dd'T'HH:mm:ss'Z'
+yyyy-MM-dd'T'HH:mm:ss.SSS'Z'
+EEE d MMM yyyy HH:mm:ss Z
+H:mm
+h:mm a
+H:mm:ss
+h:mm:ss a
