@@ -1,5 +1,6 @@
 package com.ps.datetime;
 
+import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Locale;
@@ -53,6 +54,18 @@ public class ValidateJapaneseDateFormat {
 		System.out.println(sdf.format(new Date()));
 		sdf = new SimpleDateFormat("ahh'\u65f6'mm'\u5206'ss'\u79d2' z");
 		System.out.println(sdf.format(new Date()));
+		
+		Date mDate = new Date();
+		Locale locale = new Locale("en","US");
+		
+		String fullTime = DateFormat.getDateTimeInstance(DateFormat.FULL,DateFormat.FULL,locale).format(mDate);
+		System.out.println(fullTime);
+		String longTime = DateFormat.getDateTimeInstance(DateFormat.LONG,DateFormat.LONG,locale).format(mDate);
+		System.out.println(longTime);
+		String mediumTime = DateFormat.getDateTimeInstance(DateFormat.MEDIUM,DateFormat.MEDIUM,locale).format(mDate);
+		System.out.println(mediumTime);
+		String shortTime = DateFormat.getDateTimeInstance(DateFormat.SHORT,DateFormat.SHORT,locale).format(mDate);
+		System.out.println(shortTime);
 	}
 
 }
