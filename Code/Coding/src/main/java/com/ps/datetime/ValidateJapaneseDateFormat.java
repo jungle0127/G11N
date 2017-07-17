@@ -56,7 +56,7 @@ public class ValidateJapaneseDateFormat {
 		System.out.println(sdf.format(new Date()));
 		
 		Date mDate = new Date();
-		Locale locale = new Locale("en","US");
+		Locale locale = new Locale("ja","JP");
 		
 		String fullTime = DateFormat.getDateTimeInstance(DateFormat.FULL,DateFormat.FULL,locale).format(mDate);
 		System.out.println(fullTime);
