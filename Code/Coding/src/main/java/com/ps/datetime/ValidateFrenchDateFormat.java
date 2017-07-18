@@ -5,7 +5,6 @@ import java.util.Date;
 import java.util.Locale;
 
 import com.ps.datetime.util.FormatData_fr;
-import com.ps.datetime.util.FormatData_ja;
 
 //import com.ps.datetime.util.FormatData_fr;
 
@@ -41,6 +40,7 @@ public class ValidateFrenchDateFormat {
 		vfd.printItem("DayAbbreviations");
 		vfd.printData("TimePatterns");
 		vfd.printData("DatePatterns");
+		vfd.printItem("AmPmMarkers");
 	}
 
 }

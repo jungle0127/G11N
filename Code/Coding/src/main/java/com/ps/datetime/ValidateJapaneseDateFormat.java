@@ -24,22 +24,22 @@ public class ValidateJapaneseDateFormat {
 	public void printItem(String key){
 		FormatData_ja df = new FormatData_ja();
 		String[] strs = df.getStringArray(key);
+		System.out.println("----------------------");
+		System.out.println("***" + key + "***");
 		for(String item : strs){
-			System.out.println("----------------------");
-			System.out.println("***" + key + "***");
 			System.out.println(item);
-			System.out.println("----------------------");
 		}
+		System.out.println("----------------------");
 	}
 	public static void main(String[] args) {
 		ValidateJapaneseDateFormat vcdf = new ValidateJapaneseDateFormat();
-		vcdf.printData("MonthNames");
-		vcdf.printData("MonthAbbreviations");
-		vcdf.printData("DayNames");
-		vcdf.printData("DayAbbreviations");
-		vcdf.printData("DayNarrows");
-		vcdf.printData("AmPmMarkers");
-		vcdf.printData("Eras");
+		vcdf.printItem("MonthNames");
+		vcdf.printItem("MonthAbbreviations");
+		vcdf.printItem("DayNames");
+		vcdf.printItem("DayAbbreviations");
+		vcdf.printItem("DayNarrows");
+		vcdf.printItem("AmPmMarkers");
+		vcdf.printItem("Eras");
 		vcdf.printData("buddhist.Eras");
 		vcdf.printData("japanese.Eras");
 		vcdf.printData("TimePatterns");

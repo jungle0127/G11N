@@ -15,7 +15,7 @@ public class ValidateKoreaDateFormat {
 			System.out.println("======================");
 			System.out.println(key);
 			System.out.println(item);
-			sdFormat = new SimpleDateFormat(item,Locale.FRENCH);
+			sdFormat = new SimpleDateFormat(item,Locale.KOREAN);
 			System.out.println(sdFormat.format(new Date()));
 			System.out.println("======================");
 		}
@@ -36,6 +36,7 @@ public class ValidateKoreaDateFormat {
 		vfd.printItem("MonthAbbreviations");
 		vfd.printItem("DayNames");
 		vfd.printItem("DayAbbreviations");
+		vfd.printItem("AmPmMarkers");
 		vfd.printData("TimePatterns");
 		vfd.printData("DatePatterns");
 	}

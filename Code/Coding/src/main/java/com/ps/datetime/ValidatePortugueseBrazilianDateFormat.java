@@ -4,7 +4,6 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Locale;
 
-import com.ps.datetime.util.FormatData_ko;
 import com.ps.datetime.util.FormatData_pt_BR;
 
 public class ValidatePortugueseBrazilianDateFormat {
@@ -16,7 +15,7 @@ public class ValidatePortugueseBrazilianDateFormat {
 			System.out.println("======================");
 			System.out.println(key);
 			System.out.println(item);
-			sdFormat = new SimpleDateFormat(item,Locale.FRENCH);
+			sdFormat = new SimpleDateFormat(item,Locale.CANADA);
 			System.out.println(sdFormat.format(new Date()));
 			System.out.println("======================");
 		}
